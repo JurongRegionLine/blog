@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Final</title>
+    <!--Icons-->
+    <link rel="icon" type="image/png" href="HTML5_1Color_Black.png">
+    <!--The upper section CSS-->
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 5px;
+        }
+        
+
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        </style>
+    <style>
+        .myDiv {
+          border: 5px outset black;
+          background-color: black;    
+          text-align: center;
+        }
+        p {
+  font-family: verdana;
+  font-size: 30px;
+  <style>
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+</style>
+<style>
+    .button {
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: white;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    
+    .button:hover span {
+      padding-right: 25px;
+    }
+    
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    </style>
+    <div class="myDiv">
+        <h2><p style="color:black;">Final Project</h2>
+    </div>
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/f69cd0bc36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <main>
+       <!--Font awesome script + Link to Intro-Webdesign-->
+       <!--Side-by-Side photos-->
+        <center><div class="row">
+          <div class="column">
+            <img src="HTML5_1Color_Black.png" alt="HTML5" style="width:30%">
+          </div>
+
+          <div class="column">
+            <img src="HTML5_1Color_Black.png" alt="HTML5" style="width:30%">
+          </div>
+          <div class="column">
+            <a href="http://intro-webdesign.com/" target="_blank"><i class="fab fa-html5 fa-8x"></i></a></center>
+          </div>
+    </center>
+    <!--Videos-->
+    <details>
+        <summary><b>Video - Introduction to HTML5</b></summary>
+        <p><center><video src="video/01.01 - Welcome to Introduction to HTML5.mp4" width="600" height="500" controls>Your Browser doesn't support the<code>video</code>element
+        </video></center></p>
+    </details>
+    <details><summary><b>Video - The Evolution of HTML</b></summary>
+        <p><center><video src="video/01.02 - The Evolution of HTML.mp4" width="600" height="500" controls>Your Browser doesn't support the<code>video</code>element
+        </video></center></p></details>
+        <details>
+            <!--MOre about me section-->
+            <summary><b>More about me</b></summary>
+            <p><center>I like to play game and eat junk food like McDonalds, I'm grade 5 student and I'm 12 years old</center></p>
+            <br>
+        </details>
+        <details>
+            <!--My favorite foods section-->
+            <summary><b>My favorite foods</b></summary>
+            <p><center>Burgers, French Fries, Noodles, Steak, Coke, Sprite, Fried rice</center></p>
+            <br>
+        </details>
+        <!--JS -->
+        <details>
+            <summary><b>Progress Bar</b></summary>
+            <h1>JavaScript Progress Bar</h1>
+
+<div id="myProgress">
+  <div id="myBar">10%</div>
+</div>
+
+<br>
+<button onclick="move()">Click Me</button> 
+
+<script>
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}
+</script>
+        </details>
+        <button class="button" onclick="document.getElementById('demo').innerHTML = Date()"
+            Date and time><span>Date&Time </span></button>
+            <p id="demo"></p>
+    </main>
+</body>
+</html>
